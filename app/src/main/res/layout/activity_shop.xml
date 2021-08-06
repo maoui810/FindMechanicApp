@@ -1,1 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ShopActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stockton"
+
+
+            />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            />
+        <Button
+            android:id="@+id/catagoryTypeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Truck"
+            android:backgroundTint="#2196F3"
+            />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                />
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load"
+            android:backgroundTint="#3F51B5"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/spShops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
